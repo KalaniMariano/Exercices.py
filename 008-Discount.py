@@ -7,5 +7,5 @@ while discount < 0 or discount > 100:
     print ("The discount must be between 1 and 100%")
     discount = float(input("Try again: "))
 x = (price/100)*discount
-price = price - x
+price -= x
 print ("The new price is: ", round(price,2))
