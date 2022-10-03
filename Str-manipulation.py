@@ -1,5 +1,4 @@
-#n = str(input("Type your full name: "))
-n = str("Kalani Mariano Pastorello")
+n = str(input("Type your full name: "))
 print (f"Your name in lower case: {n.lower()}")
 print (f"Your name in capital letters: {n.upper()}")
 nsplit = n.split()
