@@ -1,4 +1,2 @@
 n = float(input("Choose a number: "))
-c = n * 100
-m = n * 1000
-print (f"{n} meters have {c} centimeters and {m} millimeters")
+print (f"{n} meters have {n*100} centimeters and {n*1000} millimeters")
