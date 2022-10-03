@@ -7,5 +7,5 @@ while increase < 0 or increase > 100:
     print ("The increase must be between 1 and 100%")
     increase = float(input("Try again: "))
 x = (salary/100)*increase
-salary = salary + x
+salary += x
 print ("The new salary is: ", round(salary,2))
