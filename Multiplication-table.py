@@ -5,6 +5,6 @@ def multiplication():
     while n < 0 or n > 9:
         print ("The number must be between 1 and 9")
         n = int (input("Try again: "))
-    for i in range (11):
+    for i in range (1,11):
         print (f"{n} * {i} = {n * i}")
 multiplication()
