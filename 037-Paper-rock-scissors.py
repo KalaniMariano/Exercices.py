@@ -24,6 +24,7 @@ for i in range(games): # Number of games loop
     hchoice -= 1
     while hchoice < 0 or hchoice > 2: # input verification
         hchoice = int(input("Try again: "))
+        hchoice -= 1
     print (f"You choose {options[hchoice]}.")
     time.sleep(1.5)
     while pcchoice == hchoice:
@@ -35,8 +36,8 @@ for i in range(games): # Number of games loop
         print ("Choose [1] for PAPER, [2] for ROCK and [3] for SCISSORS.")
         hchoice = int(input())
         hchoice -= 1
-        while hchoice < 0 and hchoice > 2:
-            hchoice = int(input("Just options 1, 2 or 3"))
+        while hchoice < 0 or hchoice > 2:
+            hchoice = int(input("Just options 1, 2 or 3: "))
             hchoice -= 1
         print (f"You choose {options[hchoice]}.")
         pcchoice = random.randrange(0,2)
@@ -93,4 +94,4 @@ if human > pc:
 elif pc > human:
     print ("Computer wins :D")
 else:
-    print ("It was a draw!")
+    print ("It is a draw!")
