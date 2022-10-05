@@ -1,4 +1,7 @@
 # Exercices.py
-Learning some Python :)
+Learning some Python ✌️
 
-Take a look on exercices 037 and 045 ✌️
+Most interesting exercises: 
+- 037
+- 045
+- 049
