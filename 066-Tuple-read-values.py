@@ -38,5 +38,5 @@ else:
     print ('The even numbers were: ', end='')
     for even2 in range (len(even_number)):
         print (f'{even_number[even2]} ', end='')
-print('-'*60 , )
+print('-'*60)
 print ('Finished')
