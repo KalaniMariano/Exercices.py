@@ -9,8 +9,11 @@ while True:
     n = int(input('Type an integer: '))
     if n not in values:
         values.append(n)
+    else:
+        print('Duplicate value. Not added to the list.')
     choice = str(input('Do you want to continue? [y/n]: '))
     if choice in ('n'):
         break
-values.sort()   
-print(values)
+print('=-='*20)
+values.sort()
+print(f'You typed the values: {values}')
