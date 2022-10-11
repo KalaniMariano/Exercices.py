@@ -29,8 +29,3 @@ for pos, l in enumerate(values):
         print (pos+1, end=' ')
 print('')
 print('=-='*20)
-
-
-'''
-
-print ('=-='*20)'''
