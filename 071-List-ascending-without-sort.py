@@ -14,6 +14,6 @@ for i in range (5):
         for v in range(len(values)):
             if n <= values[v]:
                 values.insert(v, n)
-                print (f'Inserted in position \033[32m{v+1}\33[m')
+                print (f'Inserted in position \033[32m{v}\33[m')
                 break
 print(values)
