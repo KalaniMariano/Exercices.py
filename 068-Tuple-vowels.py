@@ -8,3 +8,4 @@ for c in words:
     for vowels in c:
         if vowels in "aeiou":
             print(vowels,end=' ')
+            
