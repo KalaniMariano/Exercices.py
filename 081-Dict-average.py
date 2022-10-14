@@ -3,7 +3,6 @@ also storing the situation in a dictionary. At the end,
 show the content of the structure on the screen.'''
 
 data = {}
-student = []
 
 data['NAME'] = str(input('Student NAME: '))
 data['AVERAGE'] = float(input('Student AVERAGE: '))
@@ -14,8 +13,5 @@ elif data['AVERAGE'] >=5 and data['AVERAGE'] <= 6:
 else:
     data['SITUATION'] = 'Approved'
 
-student.append(data.copy())
-
-for e in student:
-    for k, v in e.items():
-        print(f'{k}: {v}')
+for k, v in data.items():
+    print(f'{k}: {v}')
