@@ -6,8 +6,6 @@ of each student individually.'''
 
 cont = grade1 = grade2 = 0
 data = []
-names = []
-grades = []
 average = []
 while True:
     name = str(input(f'Student {cont+1}: '))
