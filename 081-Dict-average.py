@@ -12,6 +12,6 @@ elif data['AVERAGE'] >=5 and data['AVERAGE'] <= 6:
     data['SITUATION'] = 'Recuperation'
 else:
     data['SITUATION'] = 'Approved'
-
+print('=-='*20)
 for k, v in data.items():
-    print(f'{k}: {v}')
+    print(f'-  {k}: {v}')
