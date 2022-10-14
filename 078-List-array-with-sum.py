@@ -12,7 +12,7 @@ for l in range(0,3):
         array[l].append(int(input(f'Type an integer for [{l}, {c}]: ')))
         if array[l][c] % 2 == 0:
             sum_values_even += array[l][c]
-        if l == 2:
+        if c == 2:
             sum_values3 += array[l][c]
         if l == 1:
             if array[l][c] > highest:
