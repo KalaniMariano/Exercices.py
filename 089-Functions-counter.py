@@ -39,4 +39,5 @@ def counter(* num):
     for i in range(a,b,c):
         print(i,end=' ')
         sleep(0.5)
+        
 counter()
