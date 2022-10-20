@@ -26,7 +26,13 @@ def counter(* num):
     a = int(input('Start: '))
     b = int(input('End: '))
     c = int(input('Step: '))
-    if b < 0:
+    print()
+    if c == 0:
+        c +=1
+    if a > b and c > 0:
+        c *= -1
+    print(f'Count from {a} to {b}, from {c} to {c}')
+    if c < 0:
         b -= 1
     else:
         b += 1
