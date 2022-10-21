@@ -15,7 +15,8 @@ def counter(i,f,p):
 
     if i > f and p > 0: #if the start is greater than the end and step is > 0, the step needs to be decreasing
         p *= -1         #so multiply the step by -1
-
+    if i < f and p < 0: #same concept as the last "if"
+        p *= -1         
     print(f'Count from {i} to {f}, from {p} to {p}')
 
     if p < 0:   #this "if" is for the "for" show the number that the user entered for the "end"
@@ -26,7 +27,7 @@ def counter(i,f,p):
     for x in range(i,f,p):
         print(x,end=' ')
         sleep(0.2)
-        
+
     print('\33[32mTHE END...\33[m')
 
 
