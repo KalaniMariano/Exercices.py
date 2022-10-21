@@ -9,9 +9,9 @@ def greater(lst):
         if i == 0 or lst[i] > greater_num:
             greater_num = lst[i]
     print('=-='*20)
-    print('Analyzing past values', end='')
-    for i in range(3):
-        sleep(0.5)
+    print('Analyzing the values ​​passed', end='')
+    for i in range(len(lst)+2):
+        sleep(0.2)
         print('.',end='')
     print()
     for i in lst:
