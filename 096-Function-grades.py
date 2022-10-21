@@ -16,8 +16,9 @@ def grades(lst, sit=False):
             - The lowest grade;
             - The class average;
             - The situation (optional).
-    :param lst: receives the value of a list()
-    :param sit: option to add the situation to the dictionary
+    :param lst: receives the value of a list().
+    :param sit: option to add the situation to the dictionary.
+    :return: dictionary with the students grades.
     """
     dict_students = {}
     lower = sum_grades = bigger = situation = 0
