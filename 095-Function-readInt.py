@@ -7,7 +7,7 @@ def readInt(number):
         print(number, end='')
         typed_number = str(input())
         if typed_number.isnumeric():
-            return typed_number
+            return int(typed_number)
             break
         else:
             print("\033[031mOops, looks like you didn't typed an integer.\033[m")
