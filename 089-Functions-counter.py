@@ -6,9 +6,8 @@ Your program has to perform three counts through the created function:
 A) From 1 to 10, from 1 to 1.
 B) From 10 to 0, from 2 to 2.
 C) A custom count.'''
-from time import sleep
-
 def counter(i,f,p):
+    from time import sleep
     print('=-='*20)
     if p == 0: #if step == 0
         p += 1 #add 1 to step
