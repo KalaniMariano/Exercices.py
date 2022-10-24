@@ -56,7 +56,7 @@ students_grades = []
 students = int(input('How many students do you want to inform the final grade? '))
 
 for i in range(students):
-    grade = float(input(f'Student {i+1}: '))
+    grade = float(input(f'Grade student {i+1}: '))
     while grade < 0 or grade > 10:
         grade = float(input('The grade must be between 0 and 10: '))
     students_grades.append(grade)
