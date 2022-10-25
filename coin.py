@@ -17,7 +17,7 @@ def readInt(number):
             print("\033[031mOops, looks like you didn't typed an integer.\033[m")
 
 
-def increase(n, v=0):
+def increase(n, v = 0,parameter = False):
     """Increases a value by a specified percentage
 
     Args:
@@ -29,10 +29,13 @@ def increase(n, v=0):
     """
     increase_n = round((n/100)*v,2)
     n += increase_n
-    return float(round(n,2))
+    if parameter == True:
+        return coin((float(round(n,2))))
+    else:
+        return float(round(n,2))
 
 
-def decrease(n, v=0):
+def decrease(n, v = 0, parameter = False):
     """Decrease a value by a specified percentage
 
     Args:
@@ -42,17 +45,26 @@ def decrease(n, v=0):
     Returns:
         float: returns the value decreased by the specified percentage
     """
-    increase_n = round((n/100)*v,2)
+    increase_n = round((n / 100)*v, 2)
     n -= increase_n
-    return float(round(n,2))
+    if parameter == True:
+        return coin((float(round(n, 2))))
+    else:
+        return float(round(n, 2))
 
 
-def half(n):
-    return round(n / 2, 2)
+def half(n, parameter = False):
+    if parameter == True:
+        return coin(round(n / 2, 2))
+    else:
+        return round(n / 2, 2)
 
 
-def double(n):
-    return round(n * 2, 2)
+def double(n, parameter = False):
+    if parameter == True:
+        return coin(round(n * 2, 2))
+    else:
+        return round(n * 2, 2)
 
 
 def coin(n):
