@@ -53,3 +53,32 @@ def half(n):
 
 def double(n):
     return n * 2
+
+
+def coin(n):
+    n_str = str(n)
+    size_n_str = len(n_str)
+    rest = n - int(n)
+    cont_size = comma = 0
+    if n_str.count('.') == 1:
+        if (round(rest*10,1)) - round(rest*10) != 0:
+            size_n_str -= 3
+            cont_size += 1
+        else:
+            size_n_str -= 2
+    if size_n_str > 3:
+        cont3 = 0
+        list1 = []
+        list1[:0] = n_str
+        for i in range(1,size_n_str):
+            if i % 3 == 0:
+                cont3 += 1
+                comma = size_n_str - cont3 * 3
+                list1.insert(comma, ',')
+    x = ''.join(list1)
+    if cont_size > 0:
+        return (f'${x}')
+    else:
+        return (f'${x}0')
+    list1.clear()
+
