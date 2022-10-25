@@ -94,3 +94,14 @@ def coin(n):
         return (f'${x}0')
     list1.clear()
 
+
+def summary(n, i, d):
+    print('-'*37)
+    print('        SUMMARY OF THE VALUE')
+    print('-'*37)
+    print('Analyzed price:            ',coin(n))
+    print('Double of the price:       ',double(n,True))
+    print('Half of the price:         ',half(n,True))
+    print('%80 increase:              ',increase(n,i,True))
+    print('%35 decrease:              ',decrease(n,d,True))
+    
