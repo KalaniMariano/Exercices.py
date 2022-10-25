@@ -29,7 +29,7 @@ def increase(n, v=0):
     """
     increase_n = round((n/100)*v,2)
     n += increase_n
-    return float(n)
+    return float(round(n,2))
 
 
 def decrease(n, v=0):
@@ -44,15 +44,15 @@ def decrease(n, v=0):
     """
     increase_n = round((n/100)*v,2)
     n -= increase_n
-    return float(n)
+    return float(round(n,2))
 
 
 def half(n):
-    return n / 2
+    return round(n / 2, 2)
 
 
 def double(n):
-    return n * 2
+    return round(n * 2, 2)
 
 
 def coin(n):
@@ -66,15 +66,15 @@ def coin(n):
             cont_size += 1
         else:
             size_n_str -= 2
-    if size_n_str > 3:
-        cont3 = 0
-        list1 = []
-        list1[:0] = n_str
-        for i in range(1,size_n_str):
-            if i % 3 == 0:
-                cont3 += 1
-                comma = size_n_str - cont3 * 3
-                list1.insert(comma, ',')
+   
+    cont3 = 0
+    list1 = []
+    list1[:0] = n_str
+    for i in range(1,size_n_str):
+        if i % 3 == 0:
+            cont3 += 1
+            comma = size_n_str - cont3 * 3
+            list1.insert(comma, ',')
     x = ''.join(list1)
     if cont_size > 0:
         return (f'${x}')
