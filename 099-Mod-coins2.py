@@ -1,4 +1,4 @@
-'''Adapt the code from challenge 107, creating an additional function called 
+'''Adapt the code from challenge 98, creating an additional function called 
 currency() that can display the values ​​as a formatted currency value.'''
 
 import coin
