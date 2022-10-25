@@ -1,4 +1,12 @@
 def readInt(number):
+    """Checks if an input is an integer
+
+    Args:
+        number (any): input which will be checked
+
+    Returns:
+        int: if the input is numeric it will be returned as integer.
+    """
     while True:
         print(number, end='')
         typed_number = str(input())
